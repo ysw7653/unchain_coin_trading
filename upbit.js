@@ -24,7 +24,7 @@ function setUpbitData(){
     }).done(function(tickers){
       $("#table_ticker > tbody > tr").remove();
       //alert($("#table_ticker > tbody > tr").length);
-      $("#table_ticker").fadeOut("slow");
+      //$("#table_ticker").fadeOut("slow");
       for(let i = 0;i < tickers.length;i++){
         let rowHtml = "<tr><td>"+arr_korean_name[i].replace("코인","").replace("토큰","")+"</td>";
         rowHtml += "<td>" + arr_korean_name[i] +"</td>"
