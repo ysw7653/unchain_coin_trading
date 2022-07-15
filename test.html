@@ -12,6 +12,10 @@
     	crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.0.0/css/bootstrap-slider.css" />
     <style>
+      
+      #tradingview_17997{
+            height : 700px;
+          }
       body{
         color:black;
       }
@@ -21,6 +25,31 @@
     <script src="./websocket.js"></script>
   </head>
   <body>
+    <div class="tradingview-widget-container">
+      <div id="tradingview_17997"></div>
+      <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+      <script type="text/javascript">
+      new TradingView.widget(
+      {
+      "autosize": true,
+      "symbol": "UPBIT:BTCKRW",
+      "interval": "1",
+      "timezone": "Etc/UTC",
+      "theme": "light",
+      "style": "0",
+      "locale": "kr",
+      "toolbar_bg": "#f1f3f6",
+      "enable_publishing": false,
+      "allow_symbol_change": true,
+      "details": true,
+      "show_popup_button": true,
+      "popup_width": "1000",
+      "popup_height": "650",
+      "container_id": "tradingview_17997"
+    }
+      );
+      </script>
+    </div>
     <div id='tmp' style="color:pink;">
     </div>
     <br /><br />
@@ -37,5 +66,7 @@
       <tbody>
       </tbody>
     </table>
+
+    
   </body>
 </html>
