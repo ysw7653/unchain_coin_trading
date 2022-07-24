@@ -1,0 +1,56 @@
+.article_body{
+    width : 100%;
+    height : 600px;
+    box-sizing: content-box;
+    margin-top : 10px;
+    margin-left : 10px;
+    border : solid black 2px;
+    display : flex;
+    flex-wrap : wrap;
+}
+.tradingview-widget-container{
+    width : 49%;
+    height : 300px;
+    margin : 0.5% 0.5% 0.5% 0.5%;
+}
+#chart_rightside_padding{
+    width : 1%;
+}
+#tradingview_17997{
+    height : 100%;
+}
+
+.indices{
+    width : 49%;
+    height : 205px;
+    display : flex;
+    box-sizing: content-box;
+    margin-left : 0.5%;
+}
+.vix{
+    width : 33%;
+    height : 200px;
+    display : flex;
+    border : solid black 2px;
+}
+
+.stochastic{
+    width : 33%;
+    height : 200px;
+    display : flex;
+    border : solid black 2px;
+}
+
+.forceIndex{
+    width : 33%;
+    height : 200px;
+    display : flex;
+    border : solid black 2px;
+}
+
+#article_right_side{
+    width :30%;
+    height : 300px;
+    border : solid black 2px;
+    display : flex;
+}
