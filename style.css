@@ -15,8 +15,15 @@
 }
 #body_title{
     width : 80%;
+    color : white;
+    background: url('./image/title.jpg');
+    background-size: 100% 100%;
 }
 
 #home_right_side{
     margin : auto;
+}
+
+#unchain_main{
+    background : url("./image/title.jpg");
 }
