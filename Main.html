@@ -56,16 +56,41 @@
         <main>
           
           <!--타이틀-->
-          <div id = "body_title" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
-            <div class="col-md-5 p-lg-5 mx-auto my-5">
-              <h1 class="display-4 fw-normal">언체인 코인거래소</h1>
-              <p class="lead fw-normal">간단한 소개 문구</p>
-              <a class="btn btn-outline-secondary" href="#">Coming soon</a>
+          
+          <div id = "home_main_body">
+            <div id = "body_title" class="position-relative overflow-hidden p-3 p-md-5 m-md-3 text-center bg-light">
+              <div class="col-md-5 p-lg-5 mx-auto my-5">
+                <h1 class="display-4 fw-normal">언체인</h1>
+                <p class="lead fw-normal">투명한 디지털 자산 거래소</p>
+                <a id = "main_go_exchange" class="btn btn-outline-secondary" href="#">거래소</a>
+                <a id = "main_login_button" class="btn btn-outline-secondary" href="#">로그인</a>
+              </div>
+              <div class="product-device shadow-sm d-none d-md-block"></div>
+              <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
             </div>
-            <div class="product-device shadow-sm d-none d-md-block"></div>
-            <div class="product-device product-device-2 shadow-sm d-none d-md-block"></div>
+            <div id = home_right_side>
+              <!-- Please do not edit this code Mconvert currency-rates-widget starts here -->
+              <script type="text/javascript">
+                var w='100%';
+                var h='312';
+                var b='usd';
+                var a='1';
+                var l='ko';
+                var t='gray';
+                var c='cny,eur,hkd,jpy,krw,btc';
+                var ty='2';
+                var f='2';
+                var ht='mconvert.net/';
+              </script>
+              <a href="https://mconvert.net/" title="Currency Exchange Rates">
+                <script src="//mconvert.net/currency_rates"></script>
+              </a>
+              <span style="margin-right: 10px; font-size: 11px; text-align: right; display: block; font-family: Helvetica Neue;">
+                <a href="https://mconvert.net/" style="color: #337ab7; text-decoration: none; font-family: Helvetica Neue;">환율 계산기</a> by mconvert.net</span>
+              <!-- Mconvert currency rates widget ends here -->
+            </div>
           </div>
-          <!--타이틀-->
+          <!--타이틀 끝-->
           <!-- TradingView Widget BEGIN -->
           <div class="tradingview-widget-container">
             <div id="tradingview_17997"></div>

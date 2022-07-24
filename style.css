@@ -5,8 +5,18 @@
 }
 
 .table_wrapper{
-    height : 700px;
+    height : 800px;
     width : 50%;
     float : right;
     overflow : auto;
+}
+#home_main_body{
+    display : flex;
+}
+#body_title{
+    width : 80%;
+}
+
+#home_right_side{
+    margin : auto;
 }
