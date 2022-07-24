@@ -1,16 +1,12 @@
 #tradingview_17997{
-    height : 700px;
+    height : 500px;
     width : 50%;
     float : left;
 }
 
-#table_ticker{
+.table_wrapper{
     height : 700px;
     width : 50%;
     float : right;
-    overflow:scroll
-}
-
-#body_title{
-    clear : both;
+    overflow : auto;
 }
