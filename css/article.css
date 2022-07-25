@@ -54,3 +54,41 @@
     border : solid black 2px;
     display : flex;
 }
+.indices{
+    width : 60%;
+    height : 205px;
+    display : flex;
+    box-sizing: content-box;
+    margin-left : 0.5%;
+}
+
+.usd{
+    width : 20%;
+    height : 200px;
+    display : flex;
+    border : solid black 2px;
+}
+
+.vix{
+    position: relative;
+    width : 26%;
+    height : 200px;
+    display : flex;
+    border : solid black 2px;
+}
+
+.vix img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 70%;
+    object-fit: cover;
+}
+
+.stochastic{
+    width : 26%;
+    height : 200px;
+    display : flex;
+    border : solid black 2px;
+}
