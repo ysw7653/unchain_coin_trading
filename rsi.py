@@ -5,7 +5,7 @@ import webbrowser
 import datetime
 import pyupbit
 
-def rsi(ohlc: pandas.DataFrame, period: int = 14):
+def rsi_func(ohlc: pandas.DataFrame, period: int = 14):
     delta = ohlc["close"].diff()
     ups, downs = delta.copy(), delta.copy()
     ups[ups < 0] = 0
@@ -18,6 +18,6 @@ def rsi(ohlc: pandas.DataFrame, period: int = 14):
 
 while True:
     data = pyupbit.get_ohlcv(ticker="KRW-BTC", interval="minute60")
-    now_rsi = rsi(data, 14).iloc[-1]
-    print( now_rsi)
+    now_rsi = rsi_func(data, 14).iloc[-1]
+    print(now_rsi)
     time.sleep(10)
