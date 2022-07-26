@@ -53,31 +53,27 @@ for title in tqdm(range(len(titles))):
       label = label-1
       negative_flag = True
       neutrality_flag = False
-      print("1점 감점")
     
   for i in range(len(positive)):
     if positive[i] in titles[title]:
       label = label + 1
       neutrality_flag = False
       negative_flag = False
-      print("1점 득점")
 
   if (label==0):
-    labels.append(label)
-    #labels.append(0)
+    labels.append(0)
   elif label < 0:
+    label = -1
     labels.append(label)
-    #labels.append(-l)
   elif label > 0:
-    labels.append(label)
-    #labels.append(1)
+    labels.append(1)
 
 print(len(labels))
 
 my_title_df = pd.DataFrame({"title":titles, "url":urls, "label":labels})
 
 def dftoCsv(my_title_df, num):
-    my_title_df.to_csv(('./article_datas/data'+str(num)+'.csv'), sep=',', na_rep='NaN', encoding='utf-8')
+    my_title_df.to_csv(('./article_datas/data_'+str(num+10)+f"_{keyword}"+'.csv'), sep=',', na_rep='NaN', encoding='utf-8')
 
 if __name__ == "__main__":
     dftoCsv(my_title_df, num)
