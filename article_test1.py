@@ -9,7 +9,7 @@ urls = []
 
 keyword = "비트코인"
 #pageNum = 1
-for num in range(1, 50, 10):
+for num in range(1, 400, 10):
   #print(f"{pageNum}페이지입니다.----------------")
   response = requests.get(f"https://search.naver.com/search.naver?where=news&sm=tab_jum&query={keyword}&start={num}")
   html = response.text
@@ -49,25 +49,28 @@ for title in tqdm(range(len(titles))):
   
   label = 0
   for i in range(len(negative)):
-    if negative[i] in str(title):
-      print(negative[i])
-      label = -1
+    if negative[i] in titles[title]:
+      label = label-1
       negative_flag = True
       neutrality_flag = False
-      break
+      print("1점 감점")
     
-    elif negative_flag == False:
-      for i in range(len(positive)):
-        if positive[i] in str(title):
-          label = 1
-          neutrality_flag = False
-          break
-  if (negative_flag == False and neutrality_flag == True):
-    labels.append(0)
-  elif negative_flag == True:
-    labels.append(-1)
-  elif negative_flag == False:
-    labels.append(1)
+  for i in range(len(positive)):
+    if positive[i] in titles[title]:
+      label = label + 1
+      neutrality_flag = False
+      negative_flag = False
+      print("1점 득점")
+
+  if (label==0):
+    labels.append(label)
+    #labels.append(0)
+  elif label < 0:
+    labels.append(label)
+    #labels.append(-l)
+  elif label > 0:
+    labels.append(label)
+    #labels.append(1)
 
 print(len(labels))
 
