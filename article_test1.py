@@ -3,6 +3,7 @@ from bs4 import BeautifulSoup
 import re
 import pandas as pd
 from tqdm import tqdm
+import matplotlib.pyplot as plt
 
 titles = []
 urls = []
@@ -77,3 +78,12 @@ def dftoCsv(my_title_df, num):
 
 if __name__ == "__main__":
     dftoCsv(my_title_df, num)
+
+    train_data = pd.read_csv("./article_datas/data_401_비트코인.csv")
+    test_data = pd.read_csv("./article_datas/data_401_가상화폐.csv")
+
+    train_data['label'].value_counts().plot(kind='bar')
+    plt.show()
+
+    test_data['label'].value_counts().plot(kind='bar')
+    plt.show()
