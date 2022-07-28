@@ -1,2 +1,5 @@
-# unchain_coin_trading
-2022 graduation assignment
+## 설치
+해당 파일에서 명령 프롬프트 실행 후 `npm i` 명령어 실행
+
+## 개발 서버 실행
+`npm run dev` 명령어 실행
