@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6", // 컴파일 된 결과물이 어느 버전의 ECMAScript를 따를 것인지
+    "sourceMap": true, // map 파일 생성 여부
+    "moduleResolution": "node", // 모듈 해석 방법
+    "noEmit": true, // 컴파일러의 js 파일 등 출력 결과물 여부
+    "baseUrl": "./", // 비상대적 import 모듈 해석시 기준이 되는 경로
+    "paths": {
+      "@/*": ["src/*"]
+    },
+  },
+
+  "include": ["src"]
+}

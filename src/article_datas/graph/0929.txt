@@ -1,0 +1,10 @@
+비트 0929
+  label  count
+0   neg     27
+1  neut     31
+2   pos     12
+이더 0929
+  label  count
+0   neg     19
+1   neu     32
+2   pos     19

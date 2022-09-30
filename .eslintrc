@@ -1,0 +1,36 @@
+{
+  "extends": ["airbnb", "plugin:prettier/recommended", "plugin:react-hooks/recommended"],
+  "parser": "@babel/eslint-parser",
+  "plugins": ["react", "react-hooks", "prettier"],
+  "rules": {
+    "prettier/prettier": ["error", { "endOfLine": "auto" }],
+    "react/prop-types": "off",
+    "no-undef": "off",
+    "linebreak-style": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [".js", ".jsx"]
+      }
+    ],
+    "import/no-unresolved": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
+    "import/extensions": "off",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "no-unused-vars": "warn",
+    "no-use-before-define":"warn",
+    "no-underscore-dangle": "off",
+    "import/prefer-default-export": "off",
+    "react/function-component-definition": "off"
+  }
+}
